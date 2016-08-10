@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using MonopolyCore.Card;
+﻿using Assets.Scripts.MonopolyCore.Card;
+using Assets.Scripts.MonopolyCore.Game;
+using Assets.Scripts.MonopolyCore.Money;
 
-namespace MonopolyCore
+namespace Assets.Scripts.MonopolyCore.Player
 {
     public interface IMonopolyPlayer : IMoneyContainer,IMonopolyEstateContainer
     {
@@ -13,16 +10,5 @@ namespace MonopolyCore
         int CurrentMapPosition { get; }
         string PlayerName { get; }
         void Move(object sender,MovingEventArgs me);
-
     }
-
-    public class MovingEventArgs : EventArgs
-    {
-        public int Count { get; }
-        public MovingEventArgs(int count)
-        {
-            Count = count;
-        }
-    }
-
 }

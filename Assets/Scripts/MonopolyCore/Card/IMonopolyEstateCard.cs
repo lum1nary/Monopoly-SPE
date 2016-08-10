@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Assets.Scripts.MonopolyCore.Player;
 
-namespace MonopolyCore.Card
+namespace Assets.Scripts.MonopolyCore.Card
 {
     public interface IMonopolyEstateCard : IMonopolyCardBase
     {
@@ -17,26 +14,5 @@ namespace MonopolyCore.Card
         //------------------------
         void ChangeOwner(IMonopolyPlayer player);
         void UpdateRentPrice();
-    }
-    
-    
-
-    public enum SetCardStatus
-    {
-        Normal, Doubled, W1House, W2House, W3House, W4House, WHotel
-    }
-
-    public enum ColorGroup
-    {
-        Purple = 1,
-        LightBlue = 2,
-        Pink = 3,
-        Orange = 4,
-        Red = 5,
-        Yellow = 6,
-        Green = 7,
-        Blue = 8,
-        Science = 9,
-        Journey = 10
     }
 }

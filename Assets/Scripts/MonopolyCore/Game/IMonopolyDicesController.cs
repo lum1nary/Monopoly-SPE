@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace MonopolyCore
+﻿namespace Assets.Scripts.MonopolyCore.Game
 {
     public delegate void DicesDelegate(object sender, MovingEventArgs me);
     public interface IMonopolyDicesController

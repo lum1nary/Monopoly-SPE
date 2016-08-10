@@ -37,8 +37,8 @@ public class Player : MonoBehaviour
 	void Start()
 	{
 
-		if(Application.loadedLevel == 1)
-			transform.position = Position.GetWorldPoint(GameObject.Find("Game").GetComponent<Game>().GameBoardSize);
+		//if(Application.loadedLevel == 1)
+		//	transform.position = Position.GetWorldPoint(GameObject.Find("Game").GetComponent<Game>().GameBoardSize);
 //		GameObject.Find("Game").GetComponent<Game>().PlayerNext += (object sender, GameEventArgs ge) => 
 //		{
 //			for (int i = 0; i < GameObject.FindGameObjectsWithTag("Card").Length; i++) {
@@ -73,14 +73,14 @@ public class Player : MonoBehaviour
 	#region Buy
 	public void Buy( GameObject NewCard)
 	{
-		NewCard.GetComponent<EstateCard>().Owner = this;
-		Money -=NewCard.GetComponent<BaseCard>().CardInfo.PurchasePrice;
-		Cards.Add(NewCard);
-		if(BuyProperty != null)
-		{
-			BuyProperty(this, new PlayerEventArgs(Position));
-		}
-		Debug.Log("Card:" + NewCard.GetComponent<EstateCard>().name + "Has Been Byed by:" + this.Name);
+		//NewCard.GetComponent<EstateCard>().Owner = this;
+		//Money -=NewCard.GetComponent<BaseCard>().CardInfo.PurchasePrice;
+		//Cards.Add(NewCard);
+		//if(BuyProperty != null)
+		//{
+		//	BuyProperty(this, new PlayerEventArgs(Position));
+		//}
+		//Debug.Log("Card:" + NewCard.GetComponent<EstateCard>().name + "Has Been Byed by:" + this.Name);
 	}
 	#endregion
 	#region Move Function 
@@ -93,30 +93,31 @@ public class Player : MonoBehaviour
 	
 	IEnumerator Moving (int target, bool moving_forward)
 	{
-		Vector3 GameBoardSize  = GameObject.Find("Game").GetComponent<Game>().GameBoardSize;
-		if(MoveStart != null)
-			MoveStart(this,new PlayerEventArgs(Position));
+        //TODO переделать
+		//Vector3 GameBoardSize  = GameObject.Find("Game").GetComponent<Game>().GameBoardSize;
+		//if(MoveStart != null)
+		//	MoveStart(this,new PlayerEventArgs(Position));
 		
-		float step = speed * Time.deltaTime;
-		int count  = target;
-		while(count > 0)
-		{
-			if(moving_forward)
-				Position.Add(1);
-			else Position.Subtract(1);
+		//float step = speed * Time.deltaTime;
+		//int count  = target;
+		//while(count > 0)
+		//{
+		//	if(moving_forward)
+		//		Position.Add(1);
+		//	else Position.Subtract(1);
 			
-			while(transform.position != Position.GetWorldPoint(GameBoardSize))
-			{
-				transform.position = Vector3.MoveTowards(transform.position, Position.GetWorldPoint(GameBoardSize), step);
+		//	while(transform.position != Position.GetWorldPoint(GameBoardSize))
+		//	{
+		//		transform.position = Vector3.MoveTowards(transform.position, Position.GetWorldPoint(GameBoardSize), step);
 				
-				if(isMoving != null)
-					isMoving(this, new PlayerEventArgs(Position));
+		//		if(isMoving != null)
+		//			isMoving(this, new PlayerEventArgs(Position));
 				yield return null;
-			}
-			count --;
-		}
-		if(MoveEnd != null)
-			MoveEnd(this, new PlayerEventArgs(Position));
+		//	}
+		//	count --;
+		//}
+		//if(MoveEnd != null)
+		//	MoveEnd(this, new PlayerEventArgs(Position));
 	}
 	#endregion
 

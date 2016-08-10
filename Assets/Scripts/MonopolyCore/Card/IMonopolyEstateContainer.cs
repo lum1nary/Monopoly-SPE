@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
+using System.Collections.Generic;
+using Assets.Scripts.MonopolyCore.Player;
 using UnityEngine.Events;
-using MonopolyCore.Card;
 
-namespace MonopolyCore
+namespace Assets.Scripts.MonopolyCore.Card
 {
     public interface IMonopolyEstateContainer
     {
-        Collection<IMonopolyEstateCard> Cards { get; }
+        ICollection<IMonopolyEstateCard> Cards { get; }
 
         void PurchaseCard(IMonopolyEstateCard card);
         void GiveCard(IMonopolyEstateCard card, IMonopolyPlayer player);
@@ -17,19 +15,13 @@ namespace MonopolyCore
         void Lay(IMonopolyEstateCard card);
         void BuyBack(IMonopolyEstateCard card);
         void UpdateGroupStatus(ColorGroup group);
-        UnityEvent<object, MonopolyEstateContainerEventArgs> CardPurchased { get; }
-        UnityEvent<object, MonopolyEstateContainerEventArgs> CardLayed { get; }
-        UnityEvent<object, MonopolyEstateContainerEventArgs> CardBuyBacked { get; }
-        UnityEvent<object, MonopolyEstateContainerEventArgs> CardToken { get; }
-        UnityEvent<object, MonopolyEstateContainerEventArgs> CardGiven { get; }
+
+        NativeEvent<MonopolyEstateContainerEventArgs> CardPurchased { get; }
+        NativeEvent<MonopolyEstateContainerEventArgs> CardLayed { get; }
+        NativeEvent<MonopolyEstateContainerEventArgs> CardBuyBacked { get; }
+        NativeEvent<MonopolyEstateContainerEventArgs> CardToken { get; }
+        NativeEvent<MonopolyEstateContainerEventArgs> CardGiven { get; }
     }
 
-    public class MonopolyEstateContainerEventArgs : EventArgs
-    {
-        public IMonopolyEstateCard ActionItem { get; }
-        public MonopolyEstateContainerEventArgs(IMonopolyEstateCard actionItem)
-        {
-            ActionItem = actionItem;
-        }
-    }
+   
 }

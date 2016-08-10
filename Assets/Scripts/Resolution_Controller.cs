@@ -4,7 +4,7 @@ using System.Collections;
 public class Resolution_Controller : MonoBehaviour {
 	[ExecuteInEditMode]
 	// Use this for initialization
-	void Start () 
+	void Startx () 
 	{
 		Resolution [] resolutions = Screen.resolutions;
 		Screen.SetResolution (resolutions [resolutions.Length - 1].width, resolutions [resolutions.Length - 1].height, true);

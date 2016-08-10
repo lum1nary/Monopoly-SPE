@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using Assets.Scripts;
+using Assets.Scripts.Data;
 
 
 public class Location : MonoBehaviour {

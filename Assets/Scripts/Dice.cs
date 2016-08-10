@@ -24,7 +24,7 @@ public class Dice : MonoBehaviour {
 			if(Dropped != null)
 			{
 				Number = DetectNumber();
-				this.Dropped(gameObject,  new DiceActionEventArgs(Number));
+				Dropped(gameObject,  new DiceActionEventArgs(Number));
 			}
 		}
 	}

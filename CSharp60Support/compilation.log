@@ -1,0 +1,108 @@
+********************************************************************************
+*                    Wednesday, August 10, 2016 4:19:15 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 1.10.0.0
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\Workspace_Unity\Monopoly-SPE
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: D:\Workspace_Unity\Monopoly-SPE\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/mscorlib.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Core.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Xml.dll" @Temp/UnityTempFile-a06298bb99ef93b40b74f76a5b344f45
+Exit code: 0
+Elapsed time: 4.53 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Scripts\Menu\MainMenuController.cs(63,5): warning CS0618: 'Application.LoadLevel(int)' is obsolete: 'Use SceneManager.LoadScene'
+1: Assets\Scripts\Player.cs(12,28): warning CS0067: The event 'Player.BuyProperty' is never used
+2: Assets\Scripts\MonopolyCore\Game\MonopolyController.cs(28,40): warning CS0649: Field 'MonopolyController._game' is never assigned to, and will always have its default value null
+3: Assets\Scripts\MonopolyCore\Game\MonopolyController.cs(29,40): warning CS0649: Field 'MonopolyController._initialState' is never assigned to, and will always have its default value null
+4: Assets\Scripts\Player.cs(9,28): warning CS0067: The event 'Player.MoveStart' is never used
+5: Assets\Scripts\Player.cs(11,28): warning CS0067: The event 'Player.isMoving' is never used
+6: Assets\Scripts\Player.cs(10,28): warning CS0067: The event 'Player.MoveEnd' is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: D:\Workspace_Unity\Monopoly-SPE\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.33 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                    Wednesday, August 10, 2016 4:24:02 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 1.10.0.0
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\Workspace_Unity\Monopoly-SPE
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: D:\Workspace_Unity\Monopoly-SPE\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/mscorlib.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Core.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Xml.dll" @Temp/UnityTempFile-fc9a18caa8f2f5247b2deff649db94db
+Exit code: 0
+Elapsed time: 4.74 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Scripts\Menu\MainMenuController.cs(63,5): warning CS0618: 'Application.LoadLevel(int)' is obsolete: 'Use SceneManager.LoadScene'
+1: Assets\Scripts\MonopolyCore\Game\MonopolyController.cs(29,40): warning CS0649: Field 'MonopolyController._initialState' is never assigned to, and will always have its default value null
+2: Assets\Scripts\Player.cs(9,28): warning CS0067: The event 'Player.MoveStart' is never used
+3: Assets\Scripts\MonopolyCore\Game\MonopolyController.cs(28,40): warning CS0649: Field 'MonopolyController._game' is never assigned to, and will always have its default value null
+4: Assets\Scripts\Player.cs(11,28): warning CS0067: The event 'Player.isMoving' is never used
+5: Assets\Scripts\Player.cs(12,28): warning CS0067: The event 'Player.BuyProperty' is never used
+6: Assets\Scripts\Player.cs(10,28): warning CS0067: The event 'Player.MoveEnd' is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: D:\Workspace_Unity\Monopoly-SPE\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.23 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                    Wednesday, August 10, 2016 4:24:47 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 1.10.0.0
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\Workspace_Unity\Monopoly-SPE
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 6.0
+
+- Compilation -----------------------------------------------
+
+Process: D:\Workspace_Unity\Monopoly-SPE\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/mscorlib.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Core.dll" -r:"C:/Program Files/Unity/Editor/Data\Mono/lib/mono/2.0/System.Xml.dll" @Temp/UnityTempFile-59c5b7e760ded594082564f907418272
+Exit code: 0
+Elapsed time: 5.04 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (7 lines):
+0: Assets\Scripts\Menu\MainMenuController.cs(63,5): warning CS0618: 'Application.LoadLevel(int)' is obsolete: 'Use SceneManager.LoadScene'
+1: Assets\Scripts\Player.cs(10,28): warning CS0067: The event 'Player.MoveEnd' is never used
+2: Assets\Scripts\MonopolyCore\Game\MonopolyController.cs(28,40): warning CS0649: Field 'MonopolyController._game' is never assigned to, and will always have its default value null
+3: Assets\Scripts\Player.cs(9,28): warning CS0067: The event 'Player.MoveStart' is never used
+4: Assets\Scripts\Player.cs(11,28): warning CS0067: The event 'Player.isMoving' is never used
+5: Assets\Scripts\MonopolyCore\Game\MonopolyController.cs(29,40): warning CS0649: Field 'MonopolyController._initialState' is never assigned to, and will always have its default value null
+6: Assets\Scripts\Player.cs(12,28): warning CS0067: The event 'Player.BuyProperty' is never used
+
+- PDB to MDB conversion --------------------------------------
+
+Process: D:\Workspace_Unity\Monopoly-SPE\CSharp60Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.19 sec
+
+- pdb2mdb.exe output (0 lines):

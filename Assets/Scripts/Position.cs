@@ -21,8 +21,7 @@ public class Position : UnityEngine.Object
 			Value +=count -40;
 		}
 		else Value +=count;
-		if(PositionAdded != null)
-			PositionAdded(this, new PositionEventArgs(old,Value));
+	    PositionAdded?.Invoke(this, new PositionEventArgs(old,Value));
 	}
 	#endregion
 	#region Subtract
@@ -34,8 +33,7 @@ public class Position : UnityEngine.Object
 			Value +=40 - count;
 		}
 		else Value -=count;
-		if(PositionSubtracted != null)
-			PositionSubtracted(this, new PositionEventArgs(old,Value));
+	    PositionSubtracted?.Invoke(this, new PositionEventArgs(old,Value));
 	}
 	#endregion
 	#region GetWorldPoint

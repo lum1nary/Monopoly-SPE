@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using Assets.Scripts.MonopolyCore.Player;
 
-namespace MonopolyCore
+namespace Assets.Scripts.MonopolyCore.Game
 {
-    
     public interface IMonopolyGame
     {
-        Collection<IMonopolyPlayer> Players { get; }
+        ICollection<IMonopolyPlayer> Players { get; }
         IMonopolyPlayer Bank { get; }
         GameMode Mode { get; }
         IMonopolyPlayer CurrentPlayer { get; }
@@ -18,6 +15,4 @@ namespace MonopolyCore
         void NextTurn();
         void End();
     }
-
-    public enum GameMode {Normal,Fast}
 }
